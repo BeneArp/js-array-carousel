@@ -81,7 +81,7 @@ frecciaGiu.addEventListener("click",
             // aggiungo la classe active al nuovo item
             items[activeItem].classList.add("active");
 
-        // se l'indice dell'item attivo è l'ultimo della lista le foto ricominciano
+        // se l'indice dell'item attivo è l'ultimo della lista le foto ricominciano dalla prima
         }else if(activeItem === items.length - 1){
 
             // rimuovo la classe acitve dall'item corrente
@@ -106,8 +106,19 @@ frecciaSu.addEventListener("click",
             // rimuovo la classe acitve dall'item corrente
             items[activeItem].classList.remove("active");
 
-            // aumneto di uno l'indice della lista item
+            // diminuisco di uno l'indice della lista item
             activeItem = activeItem - 1;
+
+            // aggiungo la classe active al nuovo item
+            items[activeItem].classList.add("active");
+            
+        // se l'indice dell'item attivo è il primo della lista le foto ricominciano dall'ultima
+        }else if(activeItem === 0){
+            // rimuovo la classe acitve dall'item corrente
+            items[activeItem].classList.remove("active");
+
+            // porto l'indice all'ultimo item della lista
+            activeItem =  items.length - 1;
 
             // aggiungo la classe active al nuovo item
             items[activeItem].classList.add("active");

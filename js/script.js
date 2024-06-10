@@ -57,3 +57,16 @@ console.log(items);
 
 // aggiungo la classe active al primo item della lista
 items[0].classList.add("active");
+
+
+// riferimento alle icone dal dom
+const frecciaSu = document.querySelector(".fa-caret-up");
+const frecciaGiu = document.querySelector(".fa-caret-down");
+
+
+// EVENTO AL CLICK FRECCIA GIù
+frecciaGiu.addEventListener("click",
+    function(){
+        console.log("hai cliccato la freccia in giù");
+    }
+)

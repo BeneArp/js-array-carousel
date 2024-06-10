@@ -19,7 +19,12 @@
 
 
 // ARREY CON LE FOTO
-const gamesCover = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp"]
+const gamesCover = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp"];
+
+
+// prendo dal dom il container in cui inserire i div
+const boxContainer = document.querySelector(".container");
+
 
 
 // ciclo per creare un div con l'immagine contenuta nell'arrey, si ripete per tutti gli elementi dell'array
@@ -33,12 +38,13 @@ for(let i = 0; i < gamesCover.length; i++){
    let imgArray = i;
    console.log(gamesCover[imgArray]);
 
-    // inner html con immagine corrispondente associata grazie al ciclo 
+    // inner html con immagine corrispondente associata grazie al ciclo
     let boxContent = `  <div>
                             <img src="${imgArray}" alt="">
                             <i class="fa-solid fa-caret-up"></i>
                             <i class="fa-solid fa-caret-down"></i>
-                        </div>`
-
+                        </div>`;
     
+
 }
+

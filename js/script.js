@@ -41,8 +41,6 @@ for(let i = 0; i < gamesCover.length; i++){
     // inner html con immagine corrispondente associata grazie al ciclo
     let boxContent = `  <div class="box">
                             <img src="${gamesCover[imgArray]}" alt="">
-                            <i class="fa-solid fa-caret-up"></i>
-                            <i class="fa-solid fa-caret-down"></i>
                         </div>`;
     
     // inserisco nel dom l'html creato con js
@@ -70,8 +68,13 @@ const frecciaGiu = document.querySelector(".fa-caret-down");
 // EVENTO AL CLICK FRECCIA GIù
 frecciaGiu.addEventListener("click",
     function(){
+
+        items[activeItem].classList.remove("active");
+
         console.log("hai cliccato la freccia in giù");
 
+        activeItem = activeItem + 1;
 
+        items[activeItem].classList.add("active");
     }
 )

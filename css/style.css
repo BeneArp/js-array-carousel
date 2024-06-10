@@ -18,19 +18,25 @@ img{
     
 }
 
+/* formattazione contenitore foto */
 .box{
     text-align: center;
     width: 60%;
     margin: 450px auto;
     position: relative;
-    /* debug */
-    background-color: purple;
     height: 400px;
+    display: none;
 }
 
+/* classe immagine attiva */
+.active{
+    display: block;
+}
+
+/* formattazione frecce */
 .fa-solid{
     font-size: 25px;
-    color: rgb(209, 204, 204);
+    color: white;
     background-color: rgba(122, 122, 122, 0.5);
     padding: 0.2em 0.4em;
     border-radius: 50%;

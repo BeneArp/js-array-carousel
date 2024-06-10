@@ -8,6 +8,15 @@ body{
     background-color: lightslategray;
 }
 
+/* MAIN */
 .container{
     
+}
+
+.box{
+    width: 60%;
+    margin: 450px auto;
+    /* debug */
+    background-color: purple;
+    height: 400px;
 }

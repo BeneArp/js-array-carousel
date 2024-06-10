@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+/* generali */
 body{
     background-color: lightslategray;
+}
+
+img{
+    max-height: 100%;
 }
 
 /* MAIN */
@@ -14,9 +19,32 @@ body{
 }
 
 .box{
+    text-align: center;
     width: 60%;
     margin: 450px auto;
+    position: relative;
     /* debug */
     background-color: purple;
     height: 400px;
+}
+
+.fa-solid{
+    font-size: 25px;
+    color: rgb(209, 204, 204);
+    background-color: rgba(122, 122, 122, 0.5);
+    padding: 0.2em 0.4em;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.fa-caret-up{
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.fa-caret-down{
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
 }

@@ -17,3 +17,7 @@
 // Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagine grande attiva, come nello screenshot proposto. Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato. Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
 
 
+
+// ARREY CON LE FOTO
+const gamesCover = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp"]
+

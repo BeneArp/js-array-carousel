@@ -21,3 +21,11 @@
 // ARREY CON LE FOTO
 const gamesCover = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp"]
 
+
+// ciclo per creare un div con l'immagine contenuta nell'arrey, si ripete per tutti gli elementi dell'array
+// prendo tutto il contenuto dell'array
+for(let i = 0; i < gamesCover.length; i++){
+
+    // stampo in console il contenuto dell'array
+   console.log(gamesCover[i]);
+}

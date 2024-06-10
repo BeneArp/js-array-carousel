@@ -27,5 +27,18 @@ const gamesCover = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", 
 for(let i = 0; i < gamesCover.length; i++){
 
     // stampo in console il contenuto dell'array
-   console.log(gamesCover[i]);
+    // console.log(gamesCover[i]);
+
+    // salvo quello che trovo nell'array in una variabile
+   let imgArray = i;
+   console.log(gamesCover[imgArray]);
+
+    // inner html con immagine corrispondente associata grazie al ciclo 
+    let boxContent = `  <div>
+                            <img src="${imgArray}" alt="">
+                            <i class="fa-solid fa-caret-up"></i>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>`
+
+    
 }

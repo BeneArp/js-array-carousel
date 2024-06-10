@@ -55,8 +55,11 @@ const items = document.getElementsByClassName("box");
 // stampo in console
 console.log(items);
 
+// creo una variabile per definire quale item è l'attivo
+let activeItem = 0
+
 // aggiungo la classe active al primo item della lista
-items[0].classList.add("active");
+items[activeItem].classList.add("active");
 
 
 // riferimento alle icone dal dom
@@ -68,5 +71,7 @@ const frecciaGiu = document.querySelector(".fa-caret-down");
 frecciaGiu.addEventListener("click",
     function(){
         console.log("hai cliccato la freccia in giù");
+
+
     }
 )

@@ -83,3 +83,23 @@ frecciaGiu.addEventListener("click",
         }
     }
 )
+
+// EVENTO FRECCIA IN SU
+frecciaSu.addEventListener("click",
+    function(){
+        console.log("hai cliccato la freccia in su");
+
+        // // si verifica solo se ci sono ancora elmenti nella lista per poter aumentare l'indice
+        // if(activeItem < items.length - 1){
+        //     // rimuovo la classe acitve dall'item corrente
+        //     items[activeItem].classList.remove("active");
+
+        //     // aumneto di uno l'indice della lista item
+        //     activeItem = activeItem + 1;
+
+        //     // aggiungo la classe active al nuovo item
+        //     items[activeItem].classList.add("active");
+        // }
+    }
+)
+

@@ -39,7 +39,7 @@ for(let i = 0; i < gamesCover.length; i++){
    console.log(gamesCover[imgArray]);
 
     // inner html con immagine corrispondente associata grazie al ciclo
-    let boxContent = `  <div>
+    let boxContent = `  <div class="box">
                             <img src="${gamesCover[imgArray]}" alt="">
                             <i class="fa-solid fa-caret-up"></i>
                             <i class="fa-solid fa-caret-down"></i>
@@ -49,4 +49,6 @@ for(let i = 0; i < gamesCover.length; i++){
     boxContainer.innerHTML += boxContent;
 
 }
+
+
 

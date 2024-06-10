@@ -50,5 +50,10 @@ for(let i = 0; i < gamesCover.length; i++){
 
 }
 
+// seleziono tutti i box nel dom
+const items = document.getElementsByClassName("box");
+// stampo in console
+console.log(items);
 
-
+// aggiungo la classe active al primo item della lista
+items[0].classList.add("active");

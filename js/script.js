@@ -80,6 +80,18 @@ frecciaGiu.addEventListener("click",
 
             // aggiungo la classe active al nuovo item
             items[activeItem].classList.add("active");
+
+        // se l'indice dell'item attivo è l'ultimo della lista le foto ricominciano
+        }else if(activeItem === items.length - 1){
+
+            // rimuovo la classe acitve dall'item corrente
+            items[activeItem].classList.remove("active");
+
+            // azzero l'indice della lista
+            activeItem = 0;
+
+            // aggiungo la classe active al nuovo item
+            items[activeItem].classList.add("active");
         }
     }
 )

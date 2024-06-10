@@ -45,6 +45,8 @@ for(let i = 0; i < gamesCover.length; i++){
                             <i class="fa-solid fa-caret-down"></i>
                         </div>`;
     
+    // inserisco nel dom l'html creato con js
+    boxContainer.innerHTML += boxContent;
 
 }
 

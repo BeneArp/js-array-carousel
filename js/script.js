@@ -89,7 +89,7 @@ frecciaSu.addEventListener("click",
     function(){
         console.log("hai cliccato la freccia in su");
 
-        // si verifica solo se ci sono ancora elmenti nella lista per poter aumentare l'indice
+        // si verifica solo se l'indice dell'item attivo è diverso da 0
         if(activeItem !== 0){
             // rimuovo la classe acitve dall'item corrente
             items[activeItem].classList.remove("active");
